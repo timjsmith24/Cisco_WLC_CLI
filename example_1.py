@@ -18,4 +18,14 @@ except (NetMikoAuthenticationException, NetMikoTimeoutException):
 
 output = netconnect.send_command('show sysinfo')
 print(output)
+
+cmd = ‘show inventory’
+output = netconnect.send_command(cmd)
+print(output)
+
+cmds = ['show sysinfo','show inventory']
+for cmd in cmds:
+	output = netconnect.send_command(cmd)
+	print(output)
+	
 netconnect.disconnect()
