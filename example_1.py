@@ -3,8 +3,8 @@ import getpass
 from netmiko import Netmiko
 from netmiko.ssh_exception import NetMikoAuthenticationException, NetMikoTimeoutException
 
-host = 'cisco_lab.smithhome.local'
-user = 'admin'
+host = '192.168.1.11'
+username = input('please enter the username: ')
 pw = getpass.getpass(prompt='please enter password ')
 
 
