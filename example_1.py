@@ -27,7 +27,7 @@ output = netconnect.send_command('show sysinfo', use_textfsm=True)
 print(output)
 '''
 cmd = 'show inventory'
-output = netconnect.send_command(cmd, use_textfsm=True)
+output = netconnect.send_command(cmd)
 print(output)
 '''
 cmds = ['show sysinfo','show inventory']
