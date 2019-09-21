@@ -5,11 +5,6 @@ from netmiko import Netmiko
 from netmiko.ssh_exception import NetMikoAuthenticationException, NetMikoTimeoutException
 
 
-PATH = os.path.dirname(os.path.abspath(__file__))
-
-os.environ["NET_TEXTFSM"]='{}/ntc-templates/templates/'.format(PATH)
-
-
 host = '192.168.1.11'
 username = input('please enter the username: ')
 pw = getpass.getpass(prompt='please enter password ')
